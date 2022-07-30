@@ -1,0 +1,9 @@
+grammar org.entities.entities.Entities with org.eclipse.xtext.common.Terminals
+
+generate entities "http://www.entities.org/entities/Entities"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
